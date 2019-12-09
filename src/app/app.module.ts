@@ -10,7 +10,8 @@ import {
   EventRouteActivator,
   EventListResolver,
   CreateSessionComponent,
-  SessionListComponent
+  SessionListComponent,
+  DurationPipe
 } from './events/index';
 import { EventsAppComponent } from './events-app.component';
 import { NavBarComponent } from './nav/navbar.component';
@@ -38,7 +39,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EventsAppComponent,
     EventsListComponent,
     NavBarComponent,
-    SessionListComponent
+    SessionListComponent,
+    DurationPipe
   ],
   providers: [
     EventRouteActivator,
