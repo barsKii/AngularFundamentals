@@ -26,7 +26,9 @@ import { Error404Component } from './errors/404.component';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// tslint:disable-next-line: no-string-literal
 const toastr: Toastr = window['toastr'];
+// tslint:disable-next-line: no-string-literal
 const jQuery = window['$'];
 
 @NgModule({
