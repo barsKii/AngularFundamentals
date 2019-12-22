@@ -26,7 +26,6 @@ export class EventService {
     }
 
     searchSessions(searchTerm: string) {
-      console.log(searchTerm);
       const term = searchTerm.toLocaleLowerCase();
       let results: ISession[] = [];
 
