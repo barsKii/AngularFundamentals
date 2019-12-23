@@ -11,7 +11,9 @@ import {
   EventListResolver,
   CreateSessionComponent,
   SessionListComponent,
-  DurationPipe
+  DurationPipe,
+  UpvoteComponent,
+  VoterService
 } from './events/index';
 import { EventsAppComponent } from './events-app.component';
 import { NavBarComponent } from './nav/navbar.component';
@@ -49,6 +51,7 @@ const jQuery = window['$'];
     EventsListComponent,
     NavBarComponent,
     SessionListComponent,
+    UpvoteComponent,
     SimpleModalComponent,
     ModalTriggerDirective,
     DurationPipe
@@ -59,6 +62,7 @@ const jQuery = window['$'];
     { provide: TOASTR_TOKEN, useValue: toastr},
     { provide: JQ_TOKEN, useValue: jQuery},
     EventListResolver,
+    VoterService,
     AuthService,
     {
       provide: 'canDeactivateCreateEvent',
