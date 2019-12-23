@@ -30,7 +30,7 @@ export class AuthService {
     }
 
     checkAuthenticationStatus() {
-        this.http.get('/api/currentIdentitiy')
+        this.http.get('/api/currentIdentity')
             .pipe(tap(data => {
                 if (data instanceof Object) {
                     this.currentUser = data as IUser;
