@@ -7,7 +7,7 @@ import {
   EventService,
   EventDetailsComponent,
   CreateEventComponent,
-  EventRouteActivator,
+  EventResolver,
   EventListResolver,
   CreateSessionComponent,
   SessionListComponent,
@@ -61,7 +61,7 @@ const jQuery = window['$'];
     DurationPipe
   ],
   providers: [
-    EventRouteActivator,
+    EventResolver,
     EventService,
     { provide: TOASTR_TOKEN, useValue: toastr},
     { provide: JQ_TOKEN, useValue: jQuery},
